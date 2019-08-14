@@ -25,7 +25,7 @@ pip install quandl
 虽然Quandl可以免费使用，但是下载数据或一天调用超过50次就需要身份认证。要想获得认证，需要先在[官网](https://link.zhihu.com/?target=https%3A//www.quandl.com/)上注册账号，然后获得API key，在使用中加入如下代码：
 
 ```python
-# ㊙️ quandl.ApiConfig.api_key = "6FiQg8nNgWgUJs2csZHS"
+
 quandl.ApiConfig.api_key = "YourAPIKEY" #YOURAPIKEY换成你的API key
 ```
 
