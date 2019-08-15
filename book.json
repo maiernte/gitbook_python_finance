@@ -3,7 +3,7 @@
     "author": "鎏金天涯 <mai.yongfeng@gmail.com>",
     "description": "使用Python处理金融数据的各种技术",
     "generator": "site",
-    "plugins": ["mathjax"],
+    "plugins": ["mathjax", "page-toc" ],
     "links": {
         "sidebar": {
             "鎏金天涯个人博客": "http://goldentianya.pub"
