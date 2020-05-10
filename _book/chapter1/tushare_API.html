@@ -1,0 +1,461 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第四节: Tushare API · 使用Python处理金融数据</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="鎏金天涯 <mai.yongfeng@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rapid_API.html" />
+    
+    
+    <link rel="prev" href="quandl_API.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://goldentianya.pub" target="_blank" class="custom-link">鎏金天涯个人博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 数据的采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="python_tools.html">
+            
+                <a href="python_tools.html">
+            
+                    
+                    第一节: python 工具包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="yahoo_finance.html">
+            
+                <a href="yahoo_finance.html">
+            
+                    
+                    第二节: 雅虎财经 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="quandl_API.html">
+            
+                <a href="quandl_API.html">
+            
+                    
+                    第三节: Quandl API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="tushare_API.html">
+            
+                <a href="tushare_API.html">
+            
+                    
+                    第四节: Tushare API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="rapid_API.html">
+            
+                <a href="rapid_API.html">
+            
+                    
+                    第五节: Rapid API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="alphavantage.html">
+            
+                <a href="alphavantage.html">
+            
+                    
+                    第六节: Alpha Vantage API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第二章 基础算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/invest_returns.html">
+            
+                <a href="../chapter2/invest_returns.html">
+            
+                    
+                    收益率
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 缠论算法
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 模拟及算法评估
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 市场运作
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第四节: Tushare API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x56DB;&#x8282;-tushare-api">&#x7B2C;&#x56DB;&#x8282;: Tushare API</h1>
+<h2 id="&#x5FEB;&#x901F;&#x5165;&#x95E8;">&#x5FEB;&#x901F;&#x5165;&#x95E8;</h2>
+<p><a href="http://tushare.org/" target="_blank">&#x65E7;&#x7248;&#x6587;&#x6863;</a></p>
+<p><a href="https://tushare.pro" target="_blank">TusharePro</a>   </p>
+<p> <a href="https://tushare.pro/document/1?doc_id=40" target="_blank">&#x7528;&#x6237;&#x63A5;&#x53E3;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</a></p>
+<p>&#x5B89;&#x88C5; Tushare &#x5DE5;&#x5177;&#x5305;</p>
+<pre><code class="lang-sh">pip install tushare
+pip install tushare -- upgrade <span class="hljs-comment"># &#x7248;&#x672C;&#x5347;&#x7EA7;</span>
+</code></pre>
+<p>&#x5728;&#x5B98;&#x7F51;&#x6CE8;&#x518C;&#x5E76;&#x83B7;&#x53D6; tocken , &#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5728; py &#x6587;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;</p>
+<h3 id="&#x8BFB;&#x53D6;a&#x80A1;&#x8BC1;&#x5238;&#x4EE3;&#x53F7;">&#x8BFB;&#x53D6;A&#x80A1;&#x8BC1;&#x5238;&#x4EE3;&#x53F7;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> tushare
+print(tushare.__version__)
+<span class="hljs-comment"># 1.2.40</span>
+ts.set_token(<span class="hljs-string">&apos;my_tocken&apos;</span>)
+pro = ts.pro_api()
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x5E02;&#x573A;&#x4E2D;&#x6240;&#x6709;&#x80A1;&#x7968;&#x7684;&#x4EE3;&#x7801;</span>
+data = pro.stock_basic(exchange=<span class="hljs-string">&apos;&apos;</span>, list_status=<span class="hljs-string">&apos;L&apos;</span>, fields=<span class="hljs-string">&apos;ts_code,symbol,name,area,industry,list_date&apos;</span>) 
+data.head()
+</code></pre>
+<p><img src="https://github.com/maiernte/img/raw/master/python_finance/A&#x80A1;&#x8BC1;&#x5238;&#x4EE3;&#x53F7;.png" alt=""></p>
+<h3 id="&#x8BFB;&#x53D6;&#x4E2A;&#x80A1;&#x5386;&#x53F2;&#x6570;&#x636E;">&#x8BFB;&#x53D6;&#x4E2A;&#x80A1;&#x5386;&#x53F2;&#x6570;&#x636E;</h3>
+<pre><code class="lang-python">shenhuo = ts.get_hist_data(<span class="hljs-string">&apos;000933&apos;</span>)
+shenhuo.tail()
+</code></pre>
+<p><img src="https://github.com/maiernte/img/raw/master/python_finance/000933_history.png" alt=""></p>
+<p>&#x6CA1;&#x6709;&#x8BBE;&#x5B9A;&#x8D77;&#x59CB;&#x65E5;&#x671F;&#xFF0C; &#x4F46;&#x7ED3;&#x679C;&#x663E;&#x793A;&#x53EA;&#x6709;&#x4E00;&#x5E74;&#x591A;&#x7684;&#x6570;&#x636E;&#x3002;&#x6839;&#x636E;&#x5B98;&#x7F51;&#x7684;&#x8BF4;&#x660E;&#xFF0C;&#x6BCF;&#x6B21;&#x53EA;&#x8FD4;&#x56DE;500&#x6761;&#x8BB0;&#x5F55;&#x3002;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x8981;&#x8BFB;&#x53D6;&#x4E2A;&#x80A1;&#x5386;&#x53F2;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EA;&#x80FD;&#x5206;&#x51E0;&#x6B21;&#x8FDB;&#x884C;&#x4E86;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="quandl_API.html" class="navigation navigation-prev " aria-label="Previous page: 第三节: Quandl API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rapid_API.html" class="navigation navigation-next " aria-label="Next page: 第五节: Rapid API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第四节: Tushare API","level":"1.2.4","depth":2,"next":{"title":"第五节: Rapid API","level":"1.2.5","depth":2,"path":"chapter1/rapid_API.md","ref":"chapter1/rapid_API.md","articles":[]},"previous":{"title":"第三节: Quandl API","level":"1.2.3","depth":2,"path":"chapter1/quandl_API.md","ref":"chapter1/quandl_API.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","page-toc","advanced-emoji","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"鎏金天涯 <mai.yongfeng@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"使用Python处理金融数据","links":{"sidebar":{"鎏金天涯个人博客":"http://goldentianya.pub"}},"gitbook":"*","description":"使用Python处理金融数据的各种技术"},"file":{"path":"chapter1/tushare_API.md","mtime":"2019-08-15T18:24:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-10T19:29:20.055Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,538 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>收益率 · 使用Python处理金融数据</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="鎏金天涯 <mai.yongfeng@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://goldentianya.pub" target="_blank" class="custom-link">鎏金天涯个人博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章 数据的采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/python_tools.html">
+            
+                <a href="../chapter1/python_tools.html">
+            
+                    
+                    第一节: python 工具包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/yahoo_finance.html">
+            
+                <a href="../chapter1/yahoo_finance.html">
+            
+                    
+                    第二节: 雅虎财经 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/quandl_API.html">
+            
+                <a href="../chapter1/quandl_API.html">
+            
+                    
+                    第三节: Quandl API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/tushare_API.html">
+            
+                <a href="../chapter1/tushare_API.html">
+            
+                    
+                    第四节: Tushare API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/rapid_API.html">
+            
+                <a href="../chapter1/rapid_API.html">
+            
+                    
+                    第五节: Rapid API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter1/alphavantage.html">
+            
+                <a href="../chapter1/alphavantage.html">
+            
+                    
+                    第六节: Alpha Vantage API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第二章 基础算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="invest_returns.html">
+            
+                <a href="invest_returns.html">
+            
+                    
+                    收益率
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 缠论算法
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 模拟及算法评估
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 市场运作
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >收益率</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6536;&#x76CA;&#x7387;">&#x6536;&#x76CA;&#x7387;</h1>
+<h4 id="&#x98CE;&#x9669;&#x4E0E;&#x56DE;&#x62A5;">&#x98CE;&#x9669;&#x4E0E;&#x56DE;&#x62A5;</h4>
+<h5 id="&#x6536;&#x76CA;&#x7387;">&#x6536;&#x76CA;&#x7387;</h5>
+<ul>
+<li><p>&#x7B80;&#x5355;&#x6536;&#x76CA;&#x7387; (<em>Simple rate of return</em>)&#xFF1A;<em>when dealing with multiple assets over the same timeframe</em>.</p>
+<p><script type="math/tex; mode=display">
+	简单收益率 = \frac{ 卖出价 - 买入价 }{ 买入价 }
+  </script></p>
+</li>
+<li><p>&#x5BF9;&#x6570;&#x6536;&#x76CA;&#x7387; (<em>Logarithmic rate of return</em>)&#xFF1A;<em>when make calculations about a single asset over time</em>.
+<script type="math/tex; mode=display">
+	对数收益率 = \log{\frac{卖出价}{买入价}} = \log{卖出价} -  \log{买入价}
+  </script></p>
+</li>
+</ul>
+<blockquote>
+<p>:pen: &#x6838;&#x5FC3;&#x5C31;&#x662F;&#x5BF9;&#x4E8E;&#x5355;&#x4E00;&#x6295;&#x8D44;&#x54C1;&#x7684;&#x6536;&#x76CA;&#x7387;&#xFF0C;&#x5BF9;&#x6570;&#x6536;&#x76CA;&#x7387;&#x65F6;&#x5E8F;&#x53EF;&#x52A0;&#xFF1B;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x6295;&#x8D44;&#x54C1;&#x7684;&#x622A;&#x9762;&#x6536;&#x76CA;&#x7387;&#xFF0C;&#x5E94;&#x8BE5;&#x7528;&#x767E;&#x5206;&#x6BD4;&#x6536;&#x76CA;&#x7387;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5728;&#x622A;&#x9762;&#x4E0A;&#x6709;&#x53EF;&#x52A0;&#x6027;&#xFF1B;&#x53E6;&#x5916;&#x5BF9;&#x6570;&#x6536;&#x76CA;&#x7387;&#x5BF9;&#x5EFA;&#x6A21;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p><a href="https://www.zhihu.com/question/30113132" target="_blank">&#x53C2;&#x8003;&#x8BF4;&#x660E;</a></p>
+</blockquote>
+<h6 id="&#x7B80;&#x5355;&#x6536;&#x76CA;&#x7387;&#x5B9E;&#x4F8B;">&#x7B80;&#x5355;&#x6536;&#x76CA;&#x7387;&#x5B9E;&#x4F8B;</h6>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x52A0;&#x8F7D;&#x6570;&#x636E;</span>
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">from</span> pandas_datareader <span class="hljs-keyword">import</span> data <span class="hljs-keyword">as</span> wb
+PG = wb.DataReader(<span class="hljs-string">&apos;PG&apos;</span>, data_source=<span class="hljs-string">&apos;yahoo&apos;</span>, start=<span class="hljs-string">&apos;1995-1-1&apos;</span>)
+<span class="hljs-comment"># &#x8BA1;&#x7B97;&#x5386;&#x53F2;&#x6536;&#x76CA;&#x7387;</span>
+PG[<span class="hljs-string">&apos;simple_return&apos;</span>] = (PG[<span class="hljs-string">&apos;Adj Close&apos;</span>] / PG[<span class="hljs-string">&apos;Adj Close&apos;</span>].shift(<span class="hljs-number">1</span>)) - <span class="hljs-number">1</span>
+print(PG[<span class="hljs-string">&apos;simple_return&apos;</span>]) <span class="hljs-comment"># print out as Text</span>
+</code></pre>
+<p>&#x7528;&#x56FE;&#x8868;&#x663E;&#x793A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+PG[<span class="hljs-string">&apos;simple_return&apos;</span>].plot(figsize=(<span class="hljs-number">8</span>, <span class="hljs-number">5</span>))
+plt.show()
+</code></pre>
+<p>&#x8BA1;&#x7B97;&#x5E73;&#x5747;&#x6536;&#x76CA;&#x7387;</p>
+<pre><code class="lang-python">avg_returns_d = PG[<span class="hljs-string">&apos;simple_return&apos;</span>].mean()
+avg_returns_d <span class="hljs-comment"># &#x7ED3;&#x679C;&#x662F; 0.00054655035334591408</span>
+<span class="hljs-comment"># &#x8BA1;&#x7B97;&#x5E74;&#x5747;&#x6536;&#x76CA;&#x7387; </span>
+avg_returns_a = PG[<span class="hljs-string">&apos;simple_return&apos;</span>].mean() * <span class="hljs-number">250</span>
+avg_returns_a <span class="hljs-comment"># &#x7ED3;&#x679C;&#x662F; 0.13663758833647852</span>
+print(str(round(avg_returns_a, <span class="hljs-number">5</span>) * <span class="hljs-number">100</span>) + <span class="hljs-string">&apos; %&apos;</span>)
+<span class="hljs-comment"># &#x7ED3;&#x679C;&#x662F; 13.664 %</span>
+</code></pre>
+<h6 id="&#x5BF9;&#x6570;&#x6536;&#x76CA;&#x7387;&#x5B9E;&#x4F8B;">&#x5BF9;&#x6570;&#x6536;&#x76CA;&#x7387;&#x5B9E;&#x4F8B;</h6>
+<pre><code class="lang-python">PG[<span class="hljs-string">&apos;log_return&apos;</span>] = np.log(PG[<span class="hljs-string">&apos;Adj Close&apos;</span>]/PG[<span class="hljs-string">&apos;Adj Close&apos;</span>].shift(<span class="hljs-number">1</span>))
+log_return_d = PG[<span class="hljs-string">&apos;log_return&apos;</span>].mean()*<span class="hljs-number">250</span>
+print(str(round(log_return_d, <span class="hljs-number">5</span>) * <span class="hljs-number">100</span>) + <span class="hljs-string">&apos; %&apos;</span> )
+<span class="hljs-comment"># &#x7ED3;&#x679C;&#x662F; 11.684999999999999 %</span>
+</code></pre>
+<h5 id="&#x6536;&#x76CA;&#x6A2A;&#x5411;&#x6BD4;&#x8F83;">&#x6536;&#x76CA;&#x6A2A;&#x5411;&#x6BD4;&#x8F83;</h5>
+<pre><code class="lang-python">tickers = [<span class="hljs-string">&apos;PG&apos;</span>, <span class="hljs-string">&apos;MSFT&apos;</span>, <span class="hljs-string">&apos;F&apos;</span>, <span class="hljs-string">&apos;GE&apos;</span>]
+mydata = pd.DataFrame()
+<span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> tickers:
+    mydata[t] = wb.DataReader(t, data_source=<span class="hljs-string">&apos;yahoo&apos;</span>, start=<span class="hljs-string">&apos;1995-1-1&apos;</span>)[<span class="hljs-string">&apos;Adj Close&apos;</span>]
+</code></pre>
+<p><code>mydata</code>&#x7B2C;&#x4E00;&#x884C;&#x7684;&#x6570;&#x636E;&#x662F; $mydata.iloc[0]$ . &#x6548;&#x679C;&#x7B49;&#x4E8E; $mydata.loc[&apos;1995-01-03&apos;]$</p>
+<blockquote>
+<p>PG        6.441071
+MSFT   2.436452
+F           3.307851
+GE        4.087069
+Name: 1995-01-03 00:00:00, dtype: float64</p>
+</blockquote>
+<p>&#x4EE5;&#x7B2C;&#x4E00;&#x884C;&#x4E3A;&#x57FA;&#x51C6;,&#x8BA1;&#x7B97;&#x5386;&#x5E74;&#x6765;&#x7684;&#x589E;&#x957F;, &#x5E76;&#x7528;&#x56FE;&#x8868;&#x6253;&#x5370;&#x51FA;&#x6765;.</p>
+<pre><code class="lang-python">(mydata / mydata.iloc[<span class="hljs-number">0</span>] * <span class="hljs-number">100</span>).plot(figsize = (<span class="hljs-number">15</span>, <span class="hljs-number">6</span>));
+plt.show()
+</code></pre>
+<p><img src="https://github.com/maiernte/img/raw/master/python_finance/python&#x7ECF;&#x6D4E;&#x56DB;&#x80A1;&#x6536;&#x76CA;&#x5BF9;&#x6BD4;&#x66F2;&#x7EBF;.png" alt=""></p>
+<h5 id="&#x52A0;&#x6743;&#x6536;&#x76CA;">&#x52A0;&#x6743;&#x6536;&#x76CA;</h5>
+<p>&#x5047;&#x8BBE;&#x6BCF;&#x80A1;&#x5E73;&#x5747;&#x6309;25%&#x7684;&#x6743;&#x91CD;&#x8BA1;&#x7B97;. </p>
+<pre><code class="lang-python">returns = (mydata / mydata.shift(<span class="hljs-number">1</span>)) - <span class="hljs-number">1</span>
+weights = np.array([<span class="hljs-number">0.25</span>, <span class="hljs-number">0.25</span>, <span class="hljs-number">0.25</span>, <span class="hljs-number">0.25</span>])
+np.dot(returns, weights)
+</code></pre>
+<blockquote>
+<p>out: array([ nan,  0.0065397 , -0.0092297 , ...,  0.03227913, -0.00289308,  0.01411137]) </p>
+</blockquote>
+<p>&#x8BA1;&#x7B97;&#x5386;&#x53F2;&#x4EE5;&#x6765;&#x5E73;&#x5747;&#x5E74;&#x52A0;&#x6743;&#x6536;&#x76CA;</p>
+<pre><code class="lang-python">annual_returns = returns.mean() * <span class="hljs-number">250</span>
+np.dot(annual_returns, weights)
+<span class="hljs-comment"># &#x7ED3;&#x679C;&#x662F; 0.14225289130269819</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x91C7;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x52A0;&#x6743;, <code>weights_2 = np.array([0.4, 0.4, 0.15, 0.05])</code>, &#x5219;&#x7ED3;&#x679C;&#x4E3A;15.71% </p>
+<h5 id="&#x6307;&#x6570;&#x6536;&#x76CA;">&#x6307;&#x6570;&#x6536;&#x76CA;</h5>
+<pre><code class="lang-python">tickers = [<span class="hljs-string">&apos;^GSPC&apos;</span>, <span class="hljs-string">&apos;^IXIC&apos;</span>, <span class="hljs-string">&apos;^GDXI&apos;</span>, <span class="hljs-string">&apos;^FTSE&apos;</span>]
+</code></pre>
+<blockquote>
+<p><strong>S&amp;P500</strong>: ^GSPC, <strong>NASDAQ</strong>: ^IXIC, <strong>DAX</strong>: ^GDAXI, <strong>London FTSE</strong>: ^FTSE</p>
+</blockquote>
+<h6 id="&#x7F8E;&#x56FD;&#x4E09;&#x5927;&#x80A1;&#x6307;&#x6BD4;&#x8F83;">&#x7F8E;&#x56FD;&#x4E09;&#x5927;&#x80A1;&#x6307;&#x6BD4;&#x8F83;</h6>
+<pre><code class="lang-python">tickers = [<span class="hljs-string">&apos;^GSPC&apos;</span>, <span class="hljs-string">&apos;^IXIC&apos;</span>, <span class="hljs-string">&apos;^GDAXI&apos;</span>]
+ind_data = pd.DataFrame()
+<span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> tickers:
+    ind_data[t] = wb.DataReader(t, data_source=<span class="hljs-string">&apos;yahoo&apos;</span>, start=<span class="hljs-string">&apos;1997-1-1&apos;</span>)[<span class="hljs-string">&apos;Adj Close&apos;</span>]
+</code></pre>
+<p>&#x663E;&#x793A;&#x7ED3;&#x679C;</p>
+<pre><code class="lang-python">(ind_data / ind_data.iloc[<span class="hljs-number">0</span>] * <span class="hljs-number">100</span>).plot(figsize=(<span class="hljs-number">15</span>, <span class="hljs-number">6</span>));
+plt.show()
+</code></pre>
+<p><img src="https://github.com/maiernte/img/raw/master/python_finance/&#x6BCF;&#x80A1;&#x4E09;&#x5927;&#x80A1;&#x6307;&#x5386;&#x53F2;&#x6BD4;&#x8F83;.png" alt="image-20190813185214650"></p>
+<h6 id="&#x4E2A;&#x80A1;&#x4E0E;&#x5927;&#x76D8;&#x6307;&#x6570;&#x6BD4;&#x8F83;">&#x4E2A;&#x80A1;&#x4E0E;&#x5927;&#x76D8;&#x6307;&#x6570;&#x6BD4;&#x8F83;</h6>
+<pre><code class="lang-python">tickers = [<span class="hljs-string">&apos;PG&apos;</span>, <span class="hljs-string">&apos;^GSPC&apos;</span>, <span class="hljs-string">&apos;^DJI&apos;</span>]
+data_2 = pd.DataFrame()
+<span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> tickers:
+    data_2[t] = wb.DataReader(t, data_source=<span class="hljs-string">&apos;yahoo&apos;</span>, start=<span class="hljs-string">&apos;2007-1-1&apos;</span>)[<span class="hljs-string">&apos;Adj Close&apos;</span>]
+</code></pre>
+<p>&#x663E;&#x793A;&#x7ED3;&#x679C;, PG &#x5386;&#x5E74;&#x603B;&#x4F53;&#x6765;&#x8BF4;&#x4F18;&#x4E8E;&#x5927;&#x76D8;. </p>
+<pre><code class="lang-python">(data_2 / data_2.iloc[<span class="hljs-number">0</span>] * <span class="hljs-number">100</span>).plot(figsize=(<span class="hljs-number">15</span>, <span class="hljs-number">6</span>));
+plt.show()
+</code></pre>
+<p><img src="https://github.com/maiernte/img/raw/master/python_finance/PG&#x5BF9;&#x6BD4;&#x5927;&#x76D8;.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 第二章 基础算法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"收益率","level":"1.3.1","depth":2,"next":{"title":"第三章 缠论算法","level":"1.4","depth":1,"ref":"","articles":[]},"previous":{"title":"第二章 基础算法","level":"1.3","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[{"title":"收益率","level":"1.3.1","depth":2,"path":"chapter2/invest_returns.md","ref":"chapter2/invest_returns.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["mathjax","page-toc","advanced-emoji","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"鎏金天涯 <mai.yongfeng@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"使用Python处理金融数据","links":{"sidebar":{"鎏金天涯个人博客":"http://goldentianya.pub"}},"gitbook":"*","description":"使用Python处理金融数据的各种技术"},"file":{"path":"chapter2/invest_returns.md","mtime":"2019-08-14T18:03:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-10T19:29:20.055Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
